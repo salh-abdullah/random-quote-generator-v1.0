@@ -1,4 +1,3 @@
-import Buttons from "./Buttons";
 import { FaTwitter } from 'react-icons/fa';
 import { useEffect, useState } from "react";
 import Link from "next/link";
