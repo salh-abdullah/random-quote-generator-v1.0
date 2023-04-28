@@ -11,10 +11,16 @@
 }
 
 body {
+  
   background-image: linear-gradient(to bottom right, #30cfd0 0%, #330867 100%);
 }
 
 .quote-box blockquote::before,
 .quote-box blockquote::after {
   content: '"';
+}
+
+
+.quote-button:hover{
+background-image: linear-gradient(to left,#115e59, #38bdf8) !important;
 }
