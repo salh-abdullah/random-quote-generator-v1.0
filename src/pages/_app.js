@@ -1,4 +1,6 @@
-import '@jquery/styles/globals.css'
+import '@jquery/styles/globals.css';
+
+
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />
