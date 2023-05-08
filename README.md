@@ -1,7 +1,10 @@
 # Randome Quote Generator V1.0
 
 Random Quote Generator is a small and simple website that generates random quotes when the website is loaded or when you click on the [New Quote] button, also you can share the quotes on Twitter by clicking the [Tweet] button.
-This website was created using Next.JS 13, ReactJS 18, Tailwind CSS v3.3.2, and the [Quotable Random Quotes API](https://github.com/lukePeavey/quotable)
+This website was created using Next.JS 13, ReactJS 18, Tailwind CSS v3.3.2, and the [Quotable Random Quotes API](https://github.com/lukePeavey/quotable).
+
+You can try the demo on this [link](https://mellow-malabi-8c5708.netlify.app/)
+
 
 
 
