@@ -10,7 +10,7 @@ export default function QuoteBox({ darkMode, setDarkMode }) {
     const [data, setData] = useState([]);
 
     const fetchData = async () => {
-        const response = await fetch(`https://api.quotable.io/random`);
+        const response = await fetch(`https://api.quotable.io/random?maxLength=100`);
         const newData = await response.json();
         setData(newData);
     };
@@ -22,15 +22,15 @@ export default function QuoteBox({ darkMode, setDarkMode }) {
 
 
     return (
-
-        <div className="quote-box  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 md:w-2/4 lg:w-1/2 w-11/12 shadow-2xl flex flex-col items-center justify-center  duration-75 absolute -translate-x-1/2 -translate-y-1/2 
-            rounded-xl max-h-max bg-red-400 top-2/4 p-11 left-2/4 text-center">
+        <div id='quote-box'  className=" max-h-min bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100
+         md:w-2/4 lg:w-1/2  w-11/12 shadow-2xl flex flex-col items-center justify-center 
+        duration-75 absolute -translate-x-1/2 -translate-y-1/2  rounded-3xl bg-red-400 top-1/2  p-10 left-2/4 text-center">
 
             {/* Quote Content and Author name */}
-            <h2 className="text-3xl mb-10 relative after::content-none text-slate-100 after:w-20 after:h-1 after:rounded-md  
+            <h2 className="text-3xl mb-10  relative after::content-none text-slate-100 after:w-20 after:h-1 after:rounded-md  
                 after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2
                after:bg-cyan-500">Quote of the day</h2>
-            <blockquote className='text-slate-100 text-2xl min-h-[110px] min-w-fit'>{data.content}</blockquote>
+            <blockquote className='text-slate-100 text-xl lg:text-3xl md:text-2xl max-h-screen m-5 min-h-[110px] min-w-fit'>{data.content}</blockquote>
             <span className='text-slate-100 block mt-3 float-right minw-fit relative before::content-none before:w-5
                 before:h-[2px] before:bg-cyan-500 before:absolute before:top-1/2 before:left-[-30px]'>{data.author}</span>
 

@@ -30,11 +30,11 @@ export default function SocialIcons() {
 
     return (
 
-        <div className="absolute flex items-center  justify-evenly flex-row bottom-0  h-20 bg-transparent  w-1/2 ">
+        <div className="absolute  flex items-center md:mt-0 lg:mt-1 mt-10 justify-around flex-row top-0 h-20 bg-transparent  w-3/4  ">
 
             {
                 socails.map(({ id, link, icon }) => {
-                    return (<Link className="text-3xl text-slate-100 flex"
+                    return (<Link className="text-3xl hover:scale-110 hover:text-[#482084] duration-200 text-slate-100 flex"
                         target='_blank'
                         rel='noopner noreferrer'
                         href={link}

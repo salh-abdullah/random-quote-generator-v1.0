@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import QuoteBox from '@jquery/components/QuoteBox'
-import { useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import Footer from '@jquery/components/Footer'
 import SocialIcons from '@jquery/components/SocialIcons'
 
@@ -14,9 +14,9 @@ export default function Home() {
 
 
   return (
-    <div className={darkMode && "dark"}>
+    <div className={darkMode && "dark "}>
 
-      <main className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}>
+      <main className={`flex min-h-screen relative flex-col items-center justify-between p-24 ${inter.className}`}>
 
         <QuoteBox />
         <SocialIcons />
