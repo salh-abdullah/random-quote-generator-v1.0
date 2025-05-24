@@ -10,7 +10,7 @@ export default function QuoteBox({ darkMode, setDarkMode }) {
     const [data, setData] = useState([]);
 
     const fetchData = async () => {
-        const response = await fetch(`https://api.quotable.io/random`);
+        const response = await fetch(`https://api.quotable.io/quotes/random`);
         const newData = await response.json();
         setData(newData);
     };
